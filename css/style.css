@@ -1,0 +1,138 @@
+body {
+  padding-top: 50px;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section {
+  padding: 30px 0 30px 0;
+}
+
+a{
+	color: white;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid black;
+    background: rgba(0,0,0, 0.5);
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: white;
+    cursor: default;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: rgba(0,0,0,0.2);
+    color: darkgray;
+}
+
+.nav-tabs > li > a:hover {
+    border-color: black;
+    border-radius: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+} 
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 0px 20px lavenderblush;
+}
+
+.carousel-inner img {
+  width: 100%;
+}
+
+.carousel-control {
+    top: 33%;
+    height: 33%;
+    width: 20%;
+    background-color: rgba(1, 0, 0, 0.5);
+    opacity: .5;
+}
+
+.carousel-control .glyphicon-chevron-right::before {
+    margin-right: -50%;
+}
+
+.carousel-control .glyphicon-chevron-left::before {
+    margin-right: 50%;
+}
+
+#left-carousel,#right-carousel {
+	margin-top: 10%;
+}
+
+#left-carousel .carousel-indicators {
+	display: none;
+}
+
+#right-carousel .carousel-indicators {
+	display: none;
+}
+
+#top-section {
+	background: url('../images/bg.jpeg');
+	height: 100vh;
+	padding-top: 6%;
+	border-bottom: 5px solid black;
+	background-size: cover;
+}
+
+.tab-content img {
+  width: 100%;
+  height: 250px;
+  box-shadow: 0px 0px 20px darkslategrey;
+}
+
+#main-section {
+  background: url('../images/bg-main.jpeg') center center fixed;
+}
+
+@media (max-width: 320px) {
+  	#top-section {
+    height: 35vh;
+}
+.tab-content img {
+    height: 55px;
+}
+}
+
+@media (max-width: 425px) {
+  	#top-section {
+    height: 45vh;
+}
+.tab-content img {
+    height: 65px;
+}
+}
+
+@media (max-width: 560px) {
+  	#top-section {
+    height: 55vh;
+}
+.tab-content img {
+    height: 120px;
+}
+}
+
+@media (max-width: 768px) {
+	#right-carousel {
+		display: none;
+	}
+		#left-carousel {
+		display: none;
+  }
+  .tab-content img {
+    height: 150px;
+}
+}

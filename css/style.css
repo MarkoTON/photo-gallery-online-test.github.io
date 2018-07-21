@@ -13,26 +13,26 @@ a{
 }
 
 .nav-tabs {
-    border-bottom: 1px solid black;
-    background: rgba(0,0,0, 0.5);
+  border-bottom: 1px solid black;
+  background: rgba(0,0,0, 0.5);
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    color: white;
-    cursor: default;
-    background-color: rgba(0,0,0,0.5);
-    border: 1px solid black;
-    border-radius: 0;
+  color: white;
+  cursor: default;
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid black;
+  border-radius: 0;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-    background-color: rgba(0,0,0,0.2);
-    color: darkgray;
+  background-color: rgba(0,0,0,0.2);
+  color: darkgray;
 }
 
 .nav-tabs > li > a:hover {
-    border-color: black;
-    border-radius: 0;
+  border-color: black;
+  border-radius: 0;
 }
 
 .title {
@@ -44,8 +44,8 @@ a{
 } 
 
 .carousel {
-    position: relative;
-    box-shadow: 0px 0px 20px lavenderblush;
+  position: relative;
+  box-shadow: 0px 0px 20px lavenderblush;
 }
 
 .carousel-inner img {
@@ -53,19 +53,19 @@ a{
 }
 
 .carousel-control {
-    top: 33%;
-    height: 33%;
-    width: 20%;
-    background-color: rgba(1, 0, 0, 0.5);
-    opacity: .5;
+  top: 33%;
+  height: 33%;
+  width: 20%;
+  background-color: rgba(1, 0, 0, 0.5);
+  opacity: .5;
 }
 
 .carousel-control .glyphicon-chevron-right::before {
-    margin-right: -50%;
+  margin-right: -50%;
 }
 
 .carousel-control .glyphicon-chevron-left::before {
-    margin-right: 50%;
+  margin-right: 50%;
 }
 
 #left-carousel,#right-carousel {
@@ -98,30 +98,45 @@ a{
   background: url('../images/bg-main.jpeg') center center fixed;
 }
 
+.backToCV {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 20px;
+}
+.backToCV img {
+  width: 20%;
+  border: 1px solid #78C2AD;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  
+}
+
+
 @media (max-width: 320px) {
-  	#top-section {
-    height: 35vh;
+ #top-section {
+  height: 35vh;
 }
 .tab-content img {
-    height: 55px;
+  height: 55px;
 }
 }
 
 @media (max-width: 425px) {
-  	#top-section {
-    height: 45vh;
+ #top-section {
+  height: 45vh;
 }
 .tab-content img {
-    height: 65px;
+  height: 65px;
 }
 }
 
 @media (max-width: 560px) {
-  	#top-section {
-    height: 55vh;
+ #top-section {
+  height: 55vh;
 }
 .tab-content img {
-    height: 120px;
+  height: 120px;
 }
 }
 
@@ -129,10 +144,10 @@ a{
 	#right-carousel {
 		display: none;
 	}
-		#left-carousel {
-		display: none;
+  #left-carousel {
+    display: none;
   }
   .tab-content img {
     height: 150px;
-}
+  }
 }
